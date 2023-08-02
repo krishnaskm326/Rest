@@ -14,8 +14,11 @@ public class EmployeeDE {
 
 	@Test
 	public void empDeSerial() throws Throwable, JsonMappingException, IOException {
+		
 		ObjectMapper map=new ObjectMapper();
+		
 		Employee data = map.readValue(new File("./data.json"), Employee.class);
+		
 		System.out.println(data.getEmp_Name());
 		System.out.println(data.getEmp_Id());
 		System.out.println(data.getEmp_Mail());

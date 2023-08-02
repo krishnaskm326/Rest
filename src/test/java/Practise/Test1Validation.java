@@ -3,8 +3,8 @@ package Practise;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import BDDGenericMethods.JavaLibrary;
 import PojoClass.TYProject;
+import RestGenericMethods.JavaLibrary;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 

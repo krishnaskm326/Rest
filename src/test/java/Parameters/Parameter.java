@@ -4,7 +4,7 @@ import org.hamcrest.Matchers;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
-import BDDGenericMethods.JavaLibrary;
+import RestGenericMethods.JavaLibrary;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 

@@ -2,8 +2,8 @@ package Practise;
 
 import org.testng.annotations.Test;
 
-import BDDGenericMethods.JavaLibrary;
 import PojoClass.TYProject;
+import RestGenericMethods.JavaLibrary;
 
 public class Test16 {
 	@Test

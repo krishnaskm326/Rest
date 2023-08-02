@@ -4,9 +4,9 @@ import org.hamcrest.Matchers;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
-import BDDGenericMethods.JavaLibrary;
 import PojoClass.Employee;
 import PojoClass.TYProject;
+import RestGenericMethods.JavaLibrary;
 
 import static io.restassured.RestAssured.*;
 

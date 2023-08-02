@@ -12,7 +12,7 @@ import PojoClass.Employee;
 
 public class EmployeeSE {
         @Test
-	public void employeeSeri() throws Throwable, JsonMappingException, IOException {
+	public void employeeSeri() throws  JsonMappingException, IOException {
         	
 		Employee emp=new Employee("krishna","TY40","krishnaskm326@gmail.com", 6369503104l);
 		

@@ -6,6 +6,7 @@ public class Employee {
 	String emp_Id;
 	String emp_Mail;
 	long emp_phone;
+	
 	public Employee(String emp_Name,String emp_Id,String emp_Mail,long emp_phone) {
 		
 		this.emp_Name=emp_Name;

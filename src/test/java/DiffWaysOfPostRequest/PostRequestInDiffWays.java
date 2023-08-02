@@ -4,9 +4,8 @@ import org.hamcrest.Matchers;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
-import BDDGenericMethods.JavaLibrary;
-
 import PojoClass.TYProject;
+import RestGenericMethods.JavaLibrary;
 import io.restassured.http.ContentType;
 
 import static io.restassured.RestAssured.*;
@@ -15,7 +14,7 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
-public class PostRequestInDiffWays {
+public class PostRequestInDiffWays extends JavaLibrary{
 @Test
 public void postRequestUsingPojo() {
 		
@@ -75,6 +74,7 @@ public void postRequestUsingMap() {
 	.when().post("/addProject")
 	.then().assertThat().statusCode(201).contentType(ContentType.JSON)
 	.log().all().time(Matchers.lessThan(2000l),TimeUnit.MILLISECONDS);
+	 
 }
 
 }

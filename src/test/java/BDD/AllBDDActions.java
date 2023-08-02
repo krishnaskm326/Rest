@@ -6,10 +6,11 @@ import org.json.simple.JSONObject;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import BDDGenericMethods.JavaLibrary;
-import io.restassured.http.ContentType;
 
 import static io.restassured.RestAssured.*;
+import io.restassured.http.ContentType;
+
+
 
 import java.util.concurrent.TimeUnit;
 
@@ -17,24 +18,27 @@ public class AllBDDActions {
 	
 	@BeforeMethod
 	public void baseUrl() {
+		
 		baseURI="http://rmgtestingserver";
 		port=8084;
 	}
+	
 @Test
 public void postRequest() {
 	
-	JavaLibrary jlib=new JavaLibrary();
+	//JavaLibrary jlib=new JavaLibrary();
 	JSONObject jobj=new JSONObject();
 	jobj.put("createdBy", "krishna");
-	jobj.put("projectName", "OSA"+jlib.random());
+	jobj.put("projectName", "OSA234A5");
 	jobj.put("status", "On Going");
 	jobj.put("teamSize", 5);
 	
 	given().body(jobj).contentType(ContentType.JSON)
 	.when().post("/addProject")
-	.then().statusCode(201).contentType(ContentType.JSON).time(Matchers.lessThan(2000l),TimeUnit.MILLISECONDS).log().all()
-	;
+	.then().assertThat().statusCode(201).contentType(ContentType.JSON).time(Matchers.lessThan(2000l),TimeUnit.MILLISECONDS).log().all();
 }
+
+
 
 @Test
 public void getSingleRequest() {

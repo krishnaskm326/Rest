@@ -4,8 +4,8 @@ import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import BDDGenericMethods.JavaLibrary;
 import PojoClass.TYProject;
+import RestGenericMethods.JavaLibrary;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;

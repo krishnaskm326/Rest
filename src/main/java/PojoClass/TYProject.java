@@ -13,6 +13,9 @@ public class TYProject {
 		this.status = status;
 		this.teamSize = teamSize;
 	}
+	public  TYProject() {
+		
+	}
 	public String getProjectName() {
 		return projectName;
 	}

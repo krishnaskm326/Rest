@@ -9,9 +9,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import BDDGenericMethods.BaseClassAPI;
-import BDDGenericMethods.EndPoints;
-import BDDGenericMethods.IConstants;
+import RestGenericMethods.BaseClassAPI;
+import RestGenericMethods.EndPoints;
+import RestGenericMethods.IConstants;
 import groovyjarjarantlr4.v4.runtime.tree.xpath.XPath;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.http.ContentType;

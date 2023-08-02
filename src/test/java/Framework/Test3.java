@@ -5,10 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import BDDGenericMethods.BaseClassAPI;
-import BDDGenericMethods.EndPoints;
-import BDDGenericMethods.IConstants;
 import PojoClass.TYProject;
+import RestGenericMethods.BaseClassAPI;
+import RestGenericMethods.EndPoints;
+import RestGenericMethods.IConstants;
 
 import static io.restassured.RestAssured.*;
 

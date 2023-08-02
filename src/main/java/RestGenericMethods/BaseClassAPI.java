@@ -1,5 +1,6 @@
-package BDDGenericMethods;
+package RestGenericMethods;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeSuite;
 
 import io.restassured.builder.RequestSpecBuilder;
@@ -15,7 +16,7 @@ public class BaseClassAPI {
 	public JSONUtility rLib=new JSONUtility();
 	public RequestSpecification reqest;
 	public ResponseSpecification respons;
-	
+	public static WebDriver driver;
 	
 	@BeforeSuite
 	public void bfConnection() throws Throwable{

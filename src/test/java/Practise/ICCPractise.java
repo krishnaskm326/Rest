@@ -1,5 +1,6 @@
 package Practise;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -38,6 +39,7 @@ public class ICCPractise {
 		System.out.println("countryRanking "+ranking);
 		System.out.println("type of format "+format);
 		Assert.assertEquals(cName, "India");
+		
 		
 		if(format.equalsIgnoreCase("t20i")) {
 			if(cName.equalsIgnoreCase("India")) {

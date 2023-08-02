@@ -3,8 +3,9 @@ package DataDrivenTesting;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import BDDGenericMethods.JavaLibrary;
 import PojoClass.TYProject;
+import RestGenericMethods.JavaLibrary;
+
 import static io.restassured.RestAssured.*;
 
 import io.restassured.http.ContentType;

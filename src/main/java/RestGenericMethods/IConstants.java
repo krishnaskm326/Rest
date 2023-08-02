@@ -1,4 +1,4 @@
-package BDDGenericMethods;
+package RestGenericMethods;
 
 public interface IConstants {
 	String DBurl="jdbc:mySql://rmgtestingserver:3333/projects";

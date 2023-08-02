@@ -1,4 +1,4 @@
-package BDDGenericMethods;
+package RestGenericMethods;
 
 public interface EndPoints {
 

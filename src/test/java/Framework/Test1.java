@@ -9,11 +9,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import BDDGenericMethods.BaseClassAPI;
-import BDDGenericMethods.EndPoints;
-import BDDGenericMethods.IConstants;
-import BDDGenericMethods.JavaLibrary;
 import PojoClass.TYProject;
+import RestGenericMethods.BaseClassAPI;
+import RestGenericMethods.EndPoints;
+import RestGenericMethods.IConstants;
+import RestGenericMethods.JavaLibrary;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
